@@ -1,0 +1,141 @@
+body{
+    width: 375px;
+    background-color: whitesmoke;
+}
+#main-box{
+    width: 350px;
+    margin: 25px 15px;
+    border-radius: 10px;
+}
+nav{
+    background-color: hsl(193, 100%, 96%);
+    padding: 15px 15px;
+}
+nav button img{
+    height: 25px;
+    width: 105px;
+}
+nav button{
+    height: 35px;
+    width: 125px;
+    background-color: white;
+    border-color: white;
+}
+#btn1{
+    float: none;
+}
+#btn2{
+    float: right;
+    border-radius: 25px;
+    color: hsl(192, 100%, 9%);
+    font-weight: bold;
+}
+#box1 #img1{
+    width: 325px;
+    margin-top: 25px;
+}
+#box1{
+    text-align: center;
+    padding: 15px;
+}
+#box5 button ,#box1 #btn3{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 225px;
+    border-radius: 25px;
+    border-color: white;
+    margin: 15px 0px;
+}
+.logo{
+    width: 325px;
+}
+#box1{
+    background-color: hsl(193, 100%, 96%);
+    border-radius: 10px;
+}
+#box2,#box3,#box4,#box5{
+    width: 325px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 75px;
+}
+#box5{
+    margin-bottom: 25px;
+}
+
+#box6{
+    background-color:  hsl(192, 53%, 28%);
+    padding: 25px;
+    color: white;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+}
+    
+.curved{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    background: transparent;
+    width: 500px;
+    position: relative;
+}
+.curved::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid black; /* Adjust thickness and color */
+    border-radius: 50%; /* Makes the curve */
+    animation: wave-animation 10s infinite linear;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200px); /* Match the width of the wave */
+    }
+  }
+
+
+ul{
+    list-style: none;
+}
+p{
+    font-size: 18px;
+}
+
+@media (min-width:1200px) {
+    body{
+        width: 1440px;
+    }
+    #main-box{
+        margin:25px 215px;
+    }
+    nav,#box1,#box2,#box3,#box4{
+        display: flex;
+        width: 950px;
+    }
+    #div4,#div6,#div8{
+        padding-left: 75px;
+    }
+    #box1{
+        text-align: justify;
+    }
+    #box2,#box3,#box4{
+        text-align: justify;
+        flex-direction: row-reverse;
+    }
+    #box5{
+        margin-left: 325px;
+    }
+    #box6{
+        width: 950px;
+    }
+    #btn2{
+        margin-left: 675px;
+    }
+    
+}
